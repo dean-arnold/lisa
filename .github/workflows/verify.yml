@@ -18,3 +18,5 @@ jobs:
       - run: cat /var/log/user-data.log
       - run: echo "DOCKER"
       - run: systemctl --user status '*docker*'
+      - run: docker ps
+      - run: sudo docker ps
