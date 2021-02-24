@@ -3,7 +3,7 @@ on: [push]
 
 jobs:
   cowsay:
-    runs-on: self-hosted
+    runs-on: graviton2-ubuntu-20.04
 
     steps:
       - uses: actions/checkout@v2
