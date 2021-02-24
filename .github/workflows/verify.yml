@@ -4,9 +4,8 @@ on: [push]
 jobs:
   cowsay:
     runs-on: graviton2-ubuntu-18.04
+    container: npalm/cowsay
 
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
-      - run: npm install -g cowsay
       - run: cowsay -f ghostbusters "  Who ya gonna call?"
